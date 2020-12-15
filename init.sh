@@ -1,2 +1,3 @@
-git clone https://github.com/a-zinner/stepik_web_project.git /home/box/web
-bash /home/box/web/init.sh
+sudo rm /etc/nginx/sites-enabled/default
+sudo ln -sf /home/box/web/etc/nginx.conf /etc/nginx/sites-enabled/test.conf
+sudo /etc/init.d/nginx restart
